@@ -111,7 +111,7 @@ class EditLayout extends React.Component{
                         <select name="Alexadevs" value={this.state.columns[2].position} onChange={ (e) => this.handleChange(this.state.columns[2], e) }>
                         { this.state.listOption.map((option, index) =>
                             <option key={option.name} >
-                                {option.name}
+                               {option.name}
                             </option>
                         )}
                         </select>

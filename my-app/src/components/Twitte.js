@@ -14,21 +14,29 @@ class Twitte extends React.Component{
         const date = this.props.details.created_at.split(" ");
         
         return (
-            <div className="menu-fish">
-                <p><a rel="noopener noreferrer" target="_blank" href={url}>{text}</a></p>
+            <div className="twitte">
+                <p>{text}</p>
                 <button>
                     {date[2]} {date[1]}. {date[5]}
                 </button>
-                <p>Retweets</p>
-                <span>
-                    {retweetedStatusUser}
-                </span>
-                <p>Mentions</p>
-                <ul>
-                    {userMentions.map((userMention, index) => {
-                        return <li key={index}>{userMention.name}</li>
-                    })}
-                </ul>
+                <br/>
+                <a rel="noopener noreferrer" target="_blank" href={url}>Tweet link</a>
+                <div className="twitte-retweets">
+                    <p>Retweets</p>
+                    <span>
+                        {retweetedStatusUser}
+                    </span>
+                </div>
+
+                <div className="twitte-mentions">
+                    <p>Mentions</p>
+                    <ul>
+                        {userMentions.map((userMention, index) => {
+                            return <li key={index}>• {userMention.name}</li>
+                        })}
+                    </ul>
+                </div>
+
             </div>
         );
     }
