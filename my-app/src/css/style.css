@@ -428,7 +428,7 @@
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
   }
-  .twitte {
+  .tweet {
     border-bottom: 2px solid #000;
     border-top: 1px solid #000;
     padding-bottom: 2rem;
@@ -437,11 +437,11 @@
     clear: both;
     overflow: hidden;
   }
-  .twitte p {
+  .tweet p {
     margin: 0;
     font-size: 1.8rem;
   }
-  .twitte .fish-name {
+  .tweet .fish-name {
     margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -453,13 +453,13 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .twitte .price {
+  .tweet .price {
     font-size: 1.4rem;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .twitte img {
+  .tweet img {
     float: left;
     width: 150px;
     margin-right: 1rem;
@@ -605,27 +605,27 @@
     width: 30%;
   }
 
-  .twitte-retweets, .twitte-mentions{
+  .tweet-retweets, .tweet-mentions{
     margin-bottom: 25px;
   }
 
-  .twitte-retweets p, .twitte-mentions p{
+  .tweet-retweets p, .tweet-mentions p{
     border-bottom: 1px solid black;
   }
 
-  .twitte-retweets p{
+  .tweet-retweets p{
     margin-bottom: 9px;
   }
 
-  .twitte-retweets span{
+  .tweet-retweets span{
     margin-top: 9px;
   }
 
 
-  .twitte-mentions ul{
+  .tweet-mentions ul{
     margin-top: 13px;
   }
 
-  .twitte-retweets{
+  .tweet-retweets{
     margin-top: 16px;
   }
